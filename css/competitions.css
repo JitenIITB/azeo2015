@@ -1,0 +1,369 @@
+/*Chem-e-car content*/
+
+
+
+/* Chemophilia content */
+
+#chem-o-philia{
+	margin-left:0%;
+	position:relative;
+	margin-top:46%;
+	width:100%;
+	height:96%;
+	z-index:-2;
+	background-color:#ffffff;
+}
+
+#chem-o-philia-logo{
+	margin-left:31.8%;
+	z-index:2;
+	margin-top:2%;
+	position:absolute;
+}
+
+#map{
+	margin-top:5%;
+	margin-left:10%;
+	width:33%;
+	height:100%;
+	position:absolute;
+	/*background:url(../images/map.png) no-repeat;*/
+}
+
+#geotag_1{
+	margin-left:13%;
+	margin-right:-19%;
+	margin-top:-50%;
+	width:6%;
+	height:5%;
+	position:absolute;
+	background:url(../images/geotag.png) no-repeat;
+}
+
+#geotag_2{
+	margin-left:22%;
+	margin-right:-23%;
+	margin-top:-85%;
+	width:6%;
+	height:5%;
+	position:absolute;
+	background:url(../images/geotag.png) no-repeat;
+}
+
+#geotag_3{
+	margin-left:37%;
+	margin-right:-43%;
+	margin-top:-80%;
+	width:6%;
+	height:15%;
+	position:absolute;
+	background:url(../images/geotag.png) no-repeat;
+}
+
+#geotag_4{
+	margin-left:27%;
+	margin-right:-33%;
+	margin-top:-66%;
+	width:6%;
+	height:5%;
+	position:absolute;
+	background:url(../images/geotag.png) no-repeat;
+}
+
+#geotag_5{
+	margin-left:32%;
+	margin-top:-20%;
+	margin-right:-38%;
+	width:6%;
+	height:5%;
+	position:absolute;
+	background:url(../images/geotag.png) no-repeat;
+}
+
+#geotag_6{
+	margin-right:-56%;
+	margin-left:50%;
+	margin-top:-56%;
+	margin-bottom:0%;
+	width:6%;
+	height:5%;
+	position:absolute;
+	background:url(../images/geotag.png) no-repeat;
+}
+
+#geotag_7{
+	margin-left:55%;
+	margin-right:-33%;
+	margin-top:-70%;
+	width:6%;
+	height:5%;
+	position:absolute;
+	background:url(../images/geotag.png) no-repeat;
+}
+
+#geotag_8{
+	margin-left:8%;
+	margin-top:-62%;
+	margin-right:-14%;
+	width:6%;
+	height:5%;
+	position:absolute;
+	background:url(../images/geotag.png) no-repeat;
+}
+
+#btn2 a:link{
+	text-decoration:none;
+	color:#ffffff;
+}
+/*Centres done*/
+
+.item_1{
+	text-align:center;
+	float:left;
+	margin:0px;
+	position:relative;			
+}
+
+.item-hover{
+
+}	
+
+.item_1,
+.item-hover,
+.item-hover .mask_1,
+.item-img,
+.item-info_1{
+	margin-top:-65px;
+	margin-left:-50px;
+	width: 35px;
+	height:44px;	
+	border-radius:12px;
+}
+
+.item-hover,
+.item-hover_1 .mask_1,
+.item-img{ 
+	position:absolute;
+	top:0;
+	left:0;			
+}			
+
+.item-type-line .item-hover {	
+	z-index:100;	
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;	
+	opacity:0;
+	margin:0px;
+	cursor:pointer;						
+	display:block;
+	text-decoration:none;
+	text-align:center;
+}
+
+.item-type-line .item-info_1 {
+	background-color:#415063;
+	z-index:10;
+	color:#FFFFFF;
+	display:table-cell;
+	vertical-align:middle;
+	position:relative;
+	z-index:5;				 					
+}
+
+.item-type-line .item-info_1 .winner {
+	margin-left:-50px;
+	margin-top:-45px;
+	font-size:14px;	
+	width:150px;
+	height:16px;				
+	border-radius:12px;
+}
+
+.item-type-line .item-info_1 .line{
+	 height:1%;
+	 width:0%;
+	 border:1px solid;
+	 margin:0px auto;
+	 background-color:#303e3f;
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	-o-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;					 
+
+}
+
+.item-type-line .item-hover .mask_1 {
+	background-color:#415063;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);										
+	opacity:1;
+	z-index:0;
+}
+
+.item-type-line .item-hover:hover{
+	width:0%;
+	
+}
+				
+.item-img {			
+background-color:#7a548f;
+z-index:0;			
+}
+
+/*Centres coming*/
+
+.item,
+.item-hover,
+.item-hover .mask_2,
+.item-img,
+.item-info_2{
+	margin-left:0px;
+	width: 100px;
+	height:50px;	
+	border-radius:12px;
+}
+
+.item-hover,
+.item-hover .mask_2,
+.item-img{ 
+	position:absolute;
+	top:0;
+	left:0;			
+}			
+
+.item-type-line .item-hover {	
+	z-index:100;	
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;	
+	opacity:0;
+	margin:0px;
+	cursor:pointer;						
+	display:block;
+	text-decoration:none;
+	text-align:center;
+}
+
+.item-type-line .item-info_2 {
+	z-index:10;
+	color:#FFFFFF;
+	display:table-cell;
+	vertical-align:middle;
+	position:relative;
+	z-index:5;				 					
+}
+
+.winner_name{
+	font-size:11px;
+	margin-left:-46px;
+}
+.item-type-line .item-info_2 .winner {
+	margin-left:0px;
+	font-size:14px;	
+	width:100px;
+	height:20px;				
+	border-radius:12px;
+}
+
+.item-type-line .item-info_2 .line{
+	 height:1%;
+	 width:0%;
+	 border:1px solid;
+	 margin:0px auto;
+	 background-color:#303e3f;
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	-o-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;					 
+
+}
+
+.item-type-line .item-hover .mask_2 {
+	background-color:#415063;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);										
+	opacity:1;
+	z-index:0;
+}
+
+#workshoplogo{
+	position:absolute;
+	margin-left:-23%;
+	margin-top:0.2%;
+	padding-top:5%;
+
+}
+
+.bigline{
+	position:absolute;
+	width:39%;
+	height:0.1%;
+	margin-top:39%;
+	margin-left:15%;
+	border:1px solid;
+	background-color:#ffffff;
+}
+
+#quizlogo{
+	margin-top:4%;
+	margin-left:-19%;
+	position:absolute;
+}
+
+#text2{
+	text-align:center;
+	background-color:#415063;
+	color:#ffffff;
+	width:46%;
+	font-size:23px;
+	height:93.4%;
+	margin-top:0%;
+	margin-left:48%;
+	padding-top:3.1%;
+	padding-left:6%;
+	position:absolute;
+}
+
+#random_0{
+	position:absolute;
+	margin-top:3%;
+	margin-left:9%;
+}
+
+#random_1{
+	position:absolute;
+	margin-top:38%;
+	margin-left:16%;
+}
+
+#btn1{
+	font-size:20px;
+	color:#486869;
+	background-color:#ffffff;
+	border-radius:8px;
+	margin-top:3%;
+	border:3px solid;
+	width:19%;
+	padding:6px;
+	font-weight:700;
+	height:3%;
+	margin-left:36%;
+	position:relative;
+}
+
+#btn2{
+	font-size:22px;
+	color:#ffffff;
+	background-color:#415063;
+	border-radius:10px;
+	margin-top:105%;
+	border:3px solid;
+	width:25%;
+	font-weight:600;
+	height:6%;
+	margin-left:-30%;
+	position:absolute;
+}

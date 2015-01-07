@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>
 		AZeotropy 2015 | IIT Bombay
 	</title> 
@@ -11,12 +12,14 @@
 	<link rel="icon" type="image/ico" target="_blank" href="images/logo.ico"></link>
 	
 	<link rel="stylesheet" type="text/css" href="css/landing.css">
-	<link rel="stylesheet" type="text/css" href="css/competitions.css">
+	<link rel="stylesheet" type="text/css" href="css/competition.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
 	
 	
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+	<script type="text/javascript" src="js/competition.js"></script>
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
 	<script >
 
@@ -43,7 +46,7 @@
 				<ul class="logo">
 					<a href="#home" id="home">
 					<img src="images/azeologo.png" width="66" height="40"></a>
-					<li>7th-8th March 2015</li>
+					<!-- <li>7th-8th March 2015</li> -->
 				</ul>
 
 
@@ -52,7 +55,7 @@
 					<a href="#theme" id="th"><li>THEME</li></a>
 					<a href="#competitions" id="comp"><li>COMPETITIONS</li></a>
 					<a href="#sponsors" id="sponsors"><li>SPONSORS</li></a>
-					<a href="#contact" id="contact"><li>CONTACTS</li></a>
+					<a href="#contact" id="contct"><li>CONTACTS</li></a>
 				</ul>
 
 				<div class="line"></div>
@@ -138,18 +141,18 @@
 		<div id="image1"></div>
 
 		<!-- theme is here -->
-	<div id="theme">
-		<h2 id="text3">Theme</h2>
+		<div id="theme">
+			<h2 id="text3">Theme</h2>
 
-	<img id="a" src="images/theme/9c.png" width="11.12%" height="24.15%" >
-		<img id="b" src="images/theme/10c.png" width="11.12%" height="24.15%">
+		<img id="a" src="images/theme/9c.png" width="11.12%" height="24.15%" >
+	   	<img id="b" src="images/theme/10c.png" width="11.12%" height="24.15%">
 
-		<img id="c" src="images/theme/11c.png" width="11.12%" height="24.15%">
-		<img id="g" src="images/theme/15c.png" width="11.12%" height="24.15%" class="hide">
-		<img id="d" src="images/theme/12c.png" width="11.12%" height="24.15%">
-		
-		<img id="e" src="images/theme/13c.png" width="11.12%" height="24.15%">
-		<img id="f" src="images/theme/14c.png" width="11.12%" height="24.15%">
+	   	<img id="c" src="images/theme/11c.png" width="11.12%" height="24.15%">
+	   	<img id="g" src="images/theme/15c.png" width="11.12%" height="24.15%" class="hide">
+	   	<img id="d" src="images/theme/12c.png" width="11.12%" height="24.15%">
+	   	
+	   	<img id="e" src="images/theme/13c.png" width="11.12%" height="24.15%">
+	   	<img id="f" src="images/theme/14c.png" width="11.12%" height="24.15%">
 	</div>
 
 
@@ -158,7 +161,7 @@
 			<div id="chem-e-car">
 
 				<div id="compimage"><img src="images/competitions/icons/chemecar.png" width="60" height="60"></div>
-				<div id="compename">Chem-E-Car</div>
+				<div id="compename"><a href="file:///C:/xampp/htdocs/AZeotropy%202015/AZeo_final/competitions/chemecar.html" id="comp1">Chem-E-Car</a></div>
 				<div id="compedesc">Gear up and testify your Chemical Engineering spirit if you can conquer Chem-E-Timer then you are well on track!</div>
 		
 			</div>
@@ -166,68 +169,68 @@
 			<div id="poster">
 
 				<div id="compimage"><img src="images/competitions/icons/poster.png" width="60" height="60"></div>
-				<div id="compename"><a href="chemecar.html">Affiche</a></div>
+				<div id="compename"><a href="#affiche" id="comp2">Affiche</a></div>
 				<div id="compedesc">Present your research in front of world's best researchers and professors.</div>
 			</div>
 
 			<div id="dsi">
 
 				<div id="compimage"><img src="images/competitions/icons/dsi.png" width="60" height="60"></div>
-				<div id="compename">DSI</div>
+				<div id="compename"><a href="#dsi" id="comp3">DSI</a></div>
 				<div id="compedesc">We dont't want another Bhopal Gas Tragedy,do we? Get your team together and investigate a disaster scene.</div>
 			</div>
 
 			<div id="idp">
 
 				<div id="compimage"><img src="images/competitions/icons/idp.png" width="60" height="60"></div>
-				<div id="compename">IDP</div>
+				<div id="compename"><a href="#idp" id="comp4">IDP</a></div>
 				<div id="compedesc">Provide an answer to the problems faced by companies in the industry. Discuss with your teammates and present a detailed solution.</div>
 			</div>
 
 			<div id="qvizit">
 
 				<div id="compimage"><img src="images/competitions/icons/qvizit.png" width="60" height="60"></div>
-				<div id="compename">Q-viz-it</div>
+				<div id="compename"><a href="#qvizit" id="comp5">Q-viz-it</a></div>
 				<div id="compedesc">An Online Chemical Engineering Quiz. Participate and win your way to a visit to an Industrial Plant.</div>
 			</div>
 
 			<div id="cipher">
 
 				<div id="compimage"><img src="images/competitions/icons/cipher.png" width="60" height="60"></div>
-				<div id="compename">Cipher</div>
+				<div id="compename"><a href="#cipher" id="comp6">Cipher</a></div>
 				<div id="compedesc">AZeotropy's online Cryptic Hunt: It's not elementary <br> my dear Watt-son!</div>
 			</div>
 
 			<div id="chem-e-timer">
 
 				<div id="compimage"><img src="images/competitions/icons/chemetimer.png" width="60" height="60"></div>
-				<div id="compename">Chem-E-Timer</div>
+				<div id="compename"><a href="#chemetimer" id="comp7">Chem-E-Timer</a></div>
 				<div id="compedesc">Find innovative ways to measure time and create a model to control a reaction without electricity.</div>
 			</div>
 
 			<div id="chem-o-phsilia">
 
 				<div id="compimage"><img src="images/competitions/icons/chemophilia.png" width="60" height="60"></div>
-				<div id="compename">Chem-O-Philia</div>
+				<div id="compename"><a href="#chemophilia" id="comp8">Chem-O-Philia</a></div>
 				<div id="compedesc">A quiz can also be a fun!<br> Put your technical as well as general knowledge about Chemical Engineering to a test conducted across India.</div>
 			</div>
 
 			<div id="themebased">
 
 				<div id="compimage"><img src="images/competitions/icons/theme.png" width="60" height="60"></div>
-				<div id="compename">Theme Based</div>
+				<div id="compename"><a href="#thevigourstruggle" id="comp9">The Vigour Struggle</a></div>
 				<div id="compedesc">Our brand new competition for your brand new theme: Chemical Engineering in Healthcare! </div>
 			</div>
 
 			<div id="comsole">
 				<div id="compimage"><img src="images/competitions/icons/comsol.png" width="60" height="60"></div>
-				<div id="compename">Simulati</div>
+				<div id="compename"><a href="#simulati" id="comp10">Simulati</a></div>
 				<div id="compedesc">A Simulation Competition in Computational Fluid Dynamics using COMSOL.</div>
 			</div>
 
 
 		</div>
-
+ 
 	
 <!-- the sponsors page comes over here -->
 
@@ -268,7 +271,7 @@
 
 <!-- the contact us page comes over here -->
 		<div id="contacts">
-		<div class="container">
+		<div class="contain">
 			<!-- <h2 id="text4">Our Team</h2> -->
 			<!-- Overall Coordinators -->
 			<h2 id="oc">Overall Coordinators</h2>

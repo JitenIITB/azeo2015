@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jcanvas.js"></script>
+</head>	
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<!-- <div class="col-xs-12"> -->
+			<canvas id="myCanvas" width="1346" height="700" style="border:1px solid #d3d3d3; z-index:2;">
+		    
+		  	</canvas>
+		  	<!-- </div> -->
+  		</div>
+ 	</div>
+
+<script>	
+
+$(function() {
+	$(window).load(function(){
+
+		var obj0 = {
+			layer: true,
+			name: 'myBox',
+			x: 725, y:0,
+			radius:1500,
+			ccw:true,
+		}
+
+		var obj1 = {
+			layer: true,
+			name: 'myBox1',
+			x: 725, y:0,
+			fillStyle: '#425064',
+			radius: 1500,
+			ccw:true,
+			start:0, end:205
+		}
+
+		var obj2 = {
+			layer: true,
+			name: 'myBox2',
+			x: 725, y:0,
+			radius:1500,
+			ccw:true,
+			start:0,end:90
+		}
+
+		var fun = function(layer) {
+			  // Callback function
+			  $(this).animateLayer(layer, {
+			  	ccw:true,
+			    start:90, end:205
+			  }, 'slow', 'swing');
+			};
+
+		$('canvas').drawSlice(obj0);
+		$('canvas').animateLayer('myBox',obj1,2500);
+		// $('canvas').removeLayer('myBox1');
+		// $('canvas').animateLayer('myBox',obj2,500);
+		
+
+	});
+});
+
+</script>
+
+
+</body>
+</html>

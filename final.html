@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>
+		AZeotropy 2015 | IIT Bombay
+	</title> 
+
+	<link rel="icon" type="image/ico" target="_blank" href="images/logo.ico"></link>
+
+
+	<link rel="stylesheet" type="text/css" href="css/final.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.css">
+	<link rel="stylesheet" type="text/css" href="css/competition.css">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/animate.min.css"> -->
+
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jcanvas.min.js"></script>
+	<!-- // <script type="text/javascript" src='js/scrollTo.js'></script> -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/final.js"></script>
+	<script type="text/javascript" src="js/compe.js"></script>
+</head>
+
+<script >
+
+		$(window).bind("load", function() {
+		    	$('#load').delay(500).fadeOut(500);
+		});
+
+</script>
+
+<body data-spy="scroll" data-target=".navbar-example">
+
+	<div id="header" class="veil">
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="height:7Vh;margin-bottom:0px;border-radius:0px;background-color:#2c4041;" role="navigation">
+			<div class="container-fluid" style='height:9Vh;'>
+				<div class='row'>
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="true" >
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>                        
+						</button>
+
+						<div class="row" style="width:100%">
+							<a class="navbar-brand" id="hm">
+								<img src="images/azeologo.png"  style="margin-top:-8px;padding-left:25px;"></a>
+							<!-- <div class="h5 text-center" style="color:#000;padding-left:20px;">14th-15th March 2015</div> -->
+						</div>
+						
+					</div>
+
+					<div class="collapse navbar-collapse" id="myNavbar" style='width:100%;'>
+						<ul class="nav navbar-nav navbar-left">
+							<li>
+								<a href="http://azeotropy.com/ambassador/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Campus Ambassador"><i class="fa fa-users fa-2x"></i></a>
+							</li>
+							<li>
+								<a href="http://azeotropy.com/socialcampaign/index.html" target="_blank" data-toggle="tooltip" data-placement="bottom" title="i-Care"><i class="fa fa-eye fa-2x"></i></a>
+							</li>
+							<li>
+								<a href="Marketing_Brochure.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Brochure"><i class="fa fa-file-text fa-2x"></i></a>
+							</li>
+						</ul>
+
+						<div class='navbar-example'>
+							<ul class="nav navbar-nav navbar-center h4" role='tablist' style="padding-left:5%;">
+								<li><a href="#about" id="abt"><b>ABOUT</b></a></li>
+								<li><a href="#theme" id="th"><b>THEME</b></a></li>
+								<li><a href="#competitions" id="comp"><b>COMPETITIONS</b></a></li>
+								<li><a href="#sponsors" id="spnsr"><b>SPONSORS</b></a></li>
+								<li><a href="#team" id="tem"><b>CONTACT US</b></a></li>
+							</ul>
+						</div>					
+						<ul class="nav navbar-nav navbar-right" id="publi" style="padding-right:0%;">
+							<li>
+								<a href="https://www.facebook.com/AZeotropy" target="_blank">
+								<i class="fa fa-facebook-square fa-2x"></i></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/AZeotropy_IITB" target="_blank">
+								<i class="fa fa-twitter-square fa-2x"></i></a>
+							</li>
+							<li>	
+								<a href="https://www.linkedin.com/company/5117100?trk=tyah&amptrkInfo=tarId%3A1410945015211%2Ctas%3AAZeotropy%2Cidx%3A1-1-1" target="_blank">
+								<i class="fa fa-linkedin-square fa-2x"></i></a>
+							</li>
+				            <li>
+				            	<a href="https://www.iitb.ac.in" target="_blank"><img src="images/iitblogo.png" style="margin-top:-8px;padding-right:25px;" class="img-responsive"></a>
+				            </li>
+				        </ul>
+					</div>
+						<time datetime="2015-03-14" class="icon" style='top:-2em;margin-left:1em;'>
+						  <em>2015</em>
+						  <strong>March</strong>
+						  <span>14-15</span>
+						</time>
+				</div>
+			</div>
+		</nav>
+	</div>
+<!-- <div class="container-fluid"> -->
+
+		<div class="row" id="load">
+			<img src="images/loading.gif" class="img-responsive">
+		</div>
+
+		<section id="home" data-speed="10" data-type="background">
+			<div class="container-fluid">
+				<div class="row" id="landing">		
+					<canvas id="kick" width="1346" height="660" style="height:100Vh;"></canvas>
+					<div class="row" id="text1" style="height:60Vh;z-index:5;padding-top:15Vh;">
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style='padding-top:20Vh;'>
+							<img id="az" src="images/AZeo.png" class="img-responsive">
+							<!-- <div class="h3" style='color:#fff;'>14th-15th March, 2015</div> -->
+						</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" style='padding-top:20Vh;'>
+							<div class="text-right h1">AZeotropy 2015</div>
+							<div class="text-right h2">Chemical Engineering Symposium<br>IIT Bombay</div>
+						</div>
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style='padding-left:40px;'>
+							
+						</div>
+					</div>
+
+					<div class="row" id="arrow" style="height:15Vh;padding-top:15Vh;">
+						<img src="images/arrow.gif" class="img-responsive center-block">
+					</div>
+				</div>
+				<div class="row text-center" id="about" style="height:auto;padding-top:30Vh;padding-bottom:15Vh;">
+					<div class="col-lg-12 h2 text-center" style="color:#fff;" id='text2'>About</div>
+					<hr width="30%">
+					<div class="col-md-1 col-lg-1"></div>
+					<div class="h3 text-center col-xs-12 col-sm-12 col-md-10 col-lg-10 veil" style="color:#fff;padding-top:0Vh;" id="text3">
+						AZeotropy is the Annual Chemical Engineering Symposium organised by Chemical Engineering Association of IIT Bombay. It is a non-profit organisation and aims at emphasizing the spirit of engineering, experimenting with ideas and learning from them. It incorporates a stimulating blend of competitions, lectures series, hands on sessions of simulation softwares with participation from 300+ colleges, 10 corporate houses with 50+ industrialists of the field.<br></div>
+					<div class="col-md-1 col-lg-1">
+						
+					</div>
+				</div>				
+			</div>
+		</section>
+
+		<section id="image1" data-speed="6" data-type="background"></section>
+	
+ 		
+ 		<section id="theme" style="height:110Vh;background:#fff;" data-speed="10" data-type="background">
+			<div class="row">
+				<div class="col-lg-12 h2 text-center" style='padding-top:50px;'>Theme</div>
+				<hr width="30%" style='color:#486869;background-color:#486869;'>
+					<img id="a" src="images/theme/9c.png" class="img-responsive">
+					<img id="b" src="images/theme/10c.png" class="img-responsive">
+
+					<img id="c" src="images/theme/11c.png" class="img-responsive">
+					<img id="g" src="images/theme/15c.png" class="img-responsive" class="hide">
+					<img id="d" src="images/theme/12c.png" class="img-responsive">
+
+					<img id="e" src="images/theme/13c.png" class="img-responsive">
+					<img id="f" src="images/theme/14c.png" class="img-responsive">
+			</div>
+		</section>
+
+		<section id="image2" data-speed="6" data-type="background"></section>
+
+		<section id="competitions" data-speed="10" data-type="background">
+			<div class="container-fluid">
+				<div class="row" style="background-color:#486869;color:#fff;">
+					<div class="h2 text-center" style='padding-top:40px;'>Competitions</div>
+					<hr width="30%">
+					<div class="row" style='padding-top:40px;'>
+						<!-- <div class="col-lg-1"></div> -->
+
+						<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+
+							<button id="affiche" type="button" data-toggle="modal" data-target="#comp1" class="center-block">
+								<img src="images/competitions/icons/poster.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" id="affiche" data-toggle="modal" data-target="#comp1">Affiche</button>
+							</div>
+							<div class="h4 text-center">Present your research in front of world's best researchers and professors.</div>
+						</div>
+
+						<div id="chem-e-car" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+							<button type="button" data-toggle="modal" data-target="#comp2" class="center-block">
+								<img src="images/competitions/icons/chemecar.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" data-toggle="modal" data-target="#comp2">Chem-E-Car</button>
+							</div>
+							<div class="h4 text-center">Gear up and testify your Chemical Engineering spirit if you can conquer Chem-E-Timer then you are well on track!</div>
+
+						</div>
+
+						<div id="chem-e-timer" class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+
+							<button type="button" data-toggle="modal" data-target="#comp3" class="center-block">
+								<img src="images/competitions/icons/chemetimer.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" data-toggle="modal" data-target="#comp3">Chem-E-Timer</button>
+							</div>
+							<div class="h4 text-center">Find innovative ways to measure time and create a model to control a reaction without electricity.</div>
+						</div>
+
+						<div id="chem-o-philia" class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+
+							<button type="button" data-toggle="modal" data-target="#comp4" class="center-block">
+								<img src="images/competitions/icons/chemophilia.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" data-toggle="modal" data-target="#comp4">Chem-O-Philia</button>
+							</div>
+							<div class="h4 text-center">A quiz can also be a fun!<br> Put your technical as well as general knowledge about Chemical Engineering to a test conducted across India.</div>
+						</div>
+
+						<div id="cipher" class="col-xs-12 col-sm-12 col-md-6 col-lg-2">
+
+							<button type="button" data-toggle="modal" data-target="#comp5" class="center-block">
+								<img src="images/competitions/icons/cipher.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" data-toggle="modal" data-target="#comp5">Cipher</button>
+							</div>
+							<div class="h4 text-center">AZeotropy's online Cryptic Hunt: It's not elementary <br> my dear Watt-son!</div>
+						</div>
+						
+
+						<!-- <div class="col-lg-1"></div> -->
+
+					</div>
+
+					<hr color="#fff">
+
+					<div class="row" style="padding-top:35px;padding-top:10px;">
+
+						<!-- <div class="col-lg-1"></div> -->
+						
+						<div id="dsi" class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+
+							<button type="button" data-toggle="modal" data-target="#comp6" class="center-block">
+								<img src="images/competitions/icons/dsi.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" data-toggle="modal" data-target="#comp6">DSI</button>
+							</div>
+							<div class="h4 text-center">We don't want another Bhopal Gas Tragedy, do we? Get your team together and investigate a disaster scene.</div>
+						</div>
+
+						<div id="idp" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+
+							<button type="button" data-toggle="modal" data-target="#comp7" class="center-block">
+								<img src="images/competitions/icons/idp.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" data-toggle="modal" data-target="#comp7">IDP</button>
+							</div>
+							<div class="h4 text-center">Provide an answer to the problems faced by companies in the industry. Discuss with your teammates and present a detailed solution.</div>
+						</div>
+
+						<div id="qvizit" class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+
+							<button type="button" data-toggle="modal" data-target="#comp8" class="center-block">
+								<img src="images/competitions/icons/qvizit.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" data-toggle="modal" data-target="#comp8">Q-viz-it</button>
+							</div>
+							<div class="h4 text-center">An Online Chemical Engineering Quiz. Participate and win your way to a visit to an Industrial Plant.</div>
+						</div>
+
+						<div id="simulati" class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+
+							<button type="button" data-toggle="modal" data-target="#comp9" class="center-block">
+								<img src="images/competitions/icons/comsol.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" data-toggle="modal" data-target="#comp9">Simulati</button>
+							</div>
+							<div class="h4 text-center">A Simulation Competition in Computational Fluid Dynamics using COMSOL.</div>
+						</div>
+
+						<div id="swaasthaya" class="col-xs-12 col-sm-12 col-md-6 col-lg-2">
+
+							<button type="button" data-toggle="modal" data-target="#comp10" class="center-block">
+								<img src="images/competitions/icons/theme.png" class="img-responsive center-block">
+							</button>
+							<div class="h3 text-center">
+								<button type="button" data-toggle="modal" data-target="#comp10">Swaasthya</button>
+							</div>
+							<div class="h4 text-center">Our brand new competition for your brand new theme: Chemical Engineering in Healthcare! </div>
+						</div>
+
+							
+						<!-- <div class="col-lg-1"></div> -->
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="image3" data-speed="6" data-type="background" ></section>
+
+		<section id="sponsors" data-speed="10" data-type="background">
+			<div class="row" style="background:#fff;">
+	<!-- New Sponsors -->
+				<div class="row h2 text-center">
+					<div class="col-xs-12 col-lg-3 col-sm-6" style="padding-top:20px;">
+						<div class="row h3"><b>Title Sponsor</b></div>
+						<div class="row" style="padding-top:30px;">
+							<a target="_blank" href="http://www.ril.com/"><img src="images/sponsors/ril_big.png" class="img-responsive center-block" alt="Reliance"></a>
+						</div>
+					</div>
+				
+					<div class="col-xs-12 col-lg-3 col-sm-6" style="padding-top:30px;">
+						<div class="row h3"><b>Associate Sponsor</b></div>
+						<div class="row" style="padding-top:40px;">
+							<a target="_blank" href="https://indofilcc.com/"><img src="images/sponsors/indofil.png" class="img-responsive center-block" alt="Indofil"></a>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-lg-3 col-sm-6" style="padding-top:30px;">
+						<div class="row h3"><b>Chem-O-Philia Sponsor</b></div>
+						<div class="row" style="padding-top:0px;">
+							<a target="_blank" href="http://www.dai-ichiindia.com/"><img src="images/sponsors/daichi.png" class="img-responsive center-block" alt="Dai-Ichi"></a>
+						</div>
+					</div>
+						
+					<div class="col-xs-12 col-lg-3 col-sm-6" style="padding-top:30px;">
+						<div class="row h3"><b>Industrial Visit Sponsor</b></div>
+						<div class="row" style="padding-top:30px;">
+							<a target="_blank" href="http://www.india.basf.com/"><img src="images/sponsors/basf.png" class="img-responsive center-block" alt="BASF"></a>
+						</div>
+					</div>
+				</div>
+	<!-- Past Sponsors -->
+				<div class="row h2 text-center" id="pastsponsors">
+					<div class="col-xs-12 h3" style="padding-top:0px;"><b>Past Sponsors</b></div>
+					<div class="col-xs-12" style="padding-top:30px;">
+					<!-- Row one -->
+						<div class="row" style="padding-left:9%;">
+							<div class="col-lg-2 col-xs-4">
+								<a target="_blank" href="http://www.ril.com/"><img src="images/sponsors/ril.png" class="img-responsive center-block" alt="RIL"></a>
+							</div>
+							<div class="col-lg-2 col-xs-4">
+								<a target="_blank" href="http://www.tatachemicals.com/"><img src="images/sponsors/tata.png" class="img-responsive center-block" alt="TATA"></a>
+							</div>
+							<div class="col-lg-1 col-xs-4" >
+								<a target="_blank" href="http://www.ongcindia.com/"><img src="images/sponsors/ongc.png" class="img-responsive center-block" alt="ONGC"></a>
+							</div>
+							<div class="col-lg-2 col-xs-4">
+								<a target="_blank" href="http://www.india.basf.com/"><img src="images/sponsors/basf_small.png" class="img-responsive center-block" alt="BASF"></a>
+							</div>
+							<div class="col-lg-2 col-xs-4">
+								<a target="_blank" href="http://www.larsentoubro.com/"><img src="images/sponsors/lnt.png" style="padding-top:15px;padding-left:20px;" class="img-responsive center-block" alt="LNT"></a>
+							</div>
+							<div class="col-lg-2 col-xs-4">
+								<a target="_blank" href="http://www.graphiteindia.com/"><img src="images/sponsors/gi.png" style="padding-left:-10px;"class="img-responsive center-block" alt="GIL"></a>
+							</div>
+							
+						</div>
+					<!-- Row Two -->
+					<div class="col-xs-12" style="padding-top:30px;">
+						<div class="row">
+							<div class="col-lg-1"></div>
+							<div class="col-lg-2 col-xs-4">
+								<a target="_blank" href="http://www.jubl.com/"><img src="images/sponsors/organos.png" class="img-responsive center-block" alt="Organosys"></a>
+							</div>
+							<div class="col-lg-1 col-xs-4">
+								<a target="_blank" href="http://www.hindustanpetroleum.com/"><img src="images/sponsors/hp.png" class="img-responsive center-block" alt="HP"></a>
+							</div>
+							<div class="col-lg-2 col-xs-4">
+								<a target="_blank" href="http://www.fenix.in/"><img src="images/sponsors/fenix.png" class="img-responsive center-block" alt="Fenix"></a>
+							</div>
+							<div class="col-lg-1 col-xs-4">
+								<a target="_blank" href="http://www.bayer.co.in/"><img src="images/sponsors/bayer.png" class="img-responsive center-block" alt="bayer"></a>	
+							</div>
+							<div class="col-lg-2 col-xs-4">
+								<a target="_blank" href="http://www.newreka.co.in/"><img src="images/sponsors/newreka.png" class="img-responsive center-block" alt="Newera"></a>
+							</div>
+							<div class="col-lg-2 col-xs-4">
+								<a target="_blank" href="http://www.steamequipments.com/"><img src="images/sponsors/steam.png" style="margin-top:0px;" class="img-responsive center-block" alt="Steam Equipments"></a>
+							</div>
+						</div>
+					</div>
+					<!-- Row Three -->
+					<div class="col-xs-12" style="padding-top:30px;">
+						<div class="row">
+							<div class="col-lg-1 col-xs-1"></div>
+							
+							<div class="col-lg-2 col-xs-2">
+								<a target="_blank" href="http://www.ionindia.com/"><img src="images/sponsors/ion-exchange.png" class="img-responsive center-block" alt="Ion-Exchange"></a>
+							</div>
+							<div class="col-lg-2 col-xs-2">	
+								<a target="_blank" href="http://www.cewindia.com/"><img src="images/sponsors/cew.png" class="img-responsive center-block" alt="CEW"></a>
+							</div>
+							<div class="col-lg-2 col-xs-2">
+								<a target="_blank" href="https://www.mersen.com/"><img src="images/sponsors/mersen.png" style="padding-top:0px;" class="img-responsive center-block" alt="Mersen"></a>
+							</div>
+							<div class="col-lg-2 col-xs-2">
+								<a target="_blank" href="https://www.aspentech.com/"><img src="images/sponsors/aspen.png" style="padding-top:0px;" class="img-responsive center-block" alt="AspenTech"></a>
+							</div>
+							<div class="col-lg-2 col-xs-2">	
+								<a target="_blank" href="http://www.monarchcatalyst.com/"><img src="images/sponsors/monarch.png" class="img-responsive center-block" alt="Monarch"></a>
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>	
+			</div>
+		</section>
+
+		<section id="image4" data-speed="6" data-type="background"></section>
+
+		<section id="team" data-speed="10" data-type="background">
+			<div class="row" style="background:#fff;">
+
+		<!-- Overall Coordinators -->
+				<div class="row" style="padding-top:40px;">
+					<div class="h3 text-center">Overall Coordinators</div><br>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<a class="item-hover" href="https://www.facebook.com/akshat692" target="_blank">
+							<div class="item-info">
+								<div class="name">Akshat Jain</div>
+								<div class="line"></div>
+								<div class="number">+91 9967354069</div>
+								<div class="email">akshat@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/akshat.jpg" alt="" class="center-block"/></div>
+					</div>	
+
+					<div class="col-xs-4"></div>
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-3 col-xs-4">
+						<a class="item-hover" href="https://www.facebook.com/anamika.singh.1291" target="_blank">
+							<div class="item-info">
+								<div class="name">Anamika Singh</div>
+								<div class="line"></div>
+								<div class="number">+91 9769209369</div>
+								<div class="email">anamika@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/anamika.jpg" alt="" class="center-block"/></div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 col-sm-3"></div>
+				</div>
+
+		<!-- Competitions -->
+				<div class="row" style="padding-top:40px;">
+					<div class="h3 text-center">Competitions</div><br>
+					<div class="col-lg-3 col-md-3 col-sm-3"></div>
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/shrikantvchavare" target="_blank">
+							<div class="item-info">
+								<div class="name">Shrikant Chavare</div>
+								<div class="line"></div>
+								<div class="number">+91 9930076552</div>
+								<div class="email">shrikant@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/chavare.jpg" alt="" /></div>
+					</div>	
+
+					<!-- <div class="col-xs-4"></div> -->
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/nchafle" target="_blank">
+							<div class="item-info">
+								<div class="name">Nishant Chafle</div>
+								<div class="line"></div>
+								<div class="number">+91 9757352439</div>
+								<div class="email">nishant@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/chafle.jpg " alt="" /></div>
+					</div>	
+
+					<!-- <div class="col-xs-4"></div> -->
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/jyot.antani.3" target="_blank">
+							<div class="item-info">
+								<div class="name">Jyot Antani</div>
+								<div class="line"></div>
+								<div class="number">+91 9869841897</div>
+								<div class="email">jyot@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/jyot.jpg" alt="" /></div>
+					</div>	
+
+					<div class="col-lg-3 col-md-3 col-sm-3"></div>
+				</div>
+
+		<!-- Events -->
+				<div class="row" style="padding-top:40px;">
+					<div class="h3 text-center">Events</div><br>
+					<div class="col-lg-3 col-md-3 col-sm-3"></div>
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/deeksha.singhal.589" target="_blank">
+							<div class="item-info">
+								<div class="name">Deeksha Singhal</div>
+								<div class="line"></div>
+								<div class="number">+91 9869155325</div>
+								<div class="email">deeksha@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/deeksha.jpg" alt="" /></div>
+					</div>	
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/grav.gawande" target="_blank">
+							<div class="item-info">
+								<div class="name">Gaurav Gawande</div>
+								<div class="line"></div>
+								<div class="number">+91 8149905875</div>
+								<div class="email">gaurav@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/gawande.jpg" alt="" /></div>
+					</div>	
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/madhu.meena.104" target="_blank">
+							<div class="item-info">
+								<div class="name">Madhu Meena</div>
+								<div class="line"></div>
+								<div class="number">+91 9769475930</div>
+								<div class="email">madhu@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/madhu.jpg" alt="" /></div>
+					</div>	
+					<div class="col-lg-3 col-md-3 col-sm-3"></div>
+				</div>				
+
+		<!-- Marketing -->
+				<div class="row" style="padding-top:40px;">
+					<div class="h3 text-center">Marketing</div><br>
+					<div class="col-lg-3 col-md-3 col-sm-3"></div>
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/pheonix.utkarsh" target="_blank">
+							<div class="item-info">
+								<div class="name">Utkarsh Singhai</div>
+								<div class="line"></div>
+								<div class="number">+91 9769494190</div>
+								<div class="email">utkarsh@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/utk.jpg" alt="" /></div>
+					</div>	
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/neelu.banshiwal" target="_blank">
+							<div class="item-info">
+								<div class="name">Neelu Banshiwal</div>
+								<div class="line"></div>
+								<div class="number">+91 9167520470</div>
+								<div class="email">neelu@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/neelu.jpg" alt="" /></div>
+					</div>	
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/siddharth.awadhiya" target="_blank">
+							<div class="item-info">
+								<div class="name">Siddharth Awadhiya</div>
+								<div class="line"></div>
+								<div class="number">+91 9167520518</div>
+								<div class="email">siddharth@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/sid.jpg" alt="" /></div>
+					</div>	
+					<div class="col-lg-3 col-md-3 col-sm-3"></div>
+				</div>
+
+		<!-- Publicity -->
+				<div class="row" style="padding-top:40px;">
+					<div class="h3 text-center">Publicity</div><br>
+					<div class="col-lg-3 col-md-3 col-sm-3"></div>
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/ANKIT126" target="_blank">
+							<div class="item-info">
+								<div class="name">Ankit Gupta</div>
+								<div class="line"></div>
+								<div class="number">+91 7506134421</div>
+								<div class="email">ankit@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/ankit.jpg" class="img-responsive" alt="" /></div>
+					</div>	
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/shreya.shwetima" target="_blank">
+							<div class="item-info">
+								<div class="name">Shreya Shwetima</div>
+								<div class="line"></div>
+								<div class="number">+91 9769470042</div>
+								<div class="email">shreya@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/shreya.jpg" class="img-responsive" alt="" /></div>
+					</div>	
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-2 col-xs-8" >
+						<a class="item-hover" href="https://www.facebook.com/arjun.k.karangiya" target="_blank">
+							<div class="item-info">
+								<div class="name">Arjun Karangiya</div>
+								<div class="line"></div>
+								<div class="number">+91 7208043801</div>
+								<div class="email">arjun@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/arjun.jpg" class="img-responsive" alt="" /></div>
+					</div>	
+					<div class="col-lg-3 col-md-3 col-sm-3"></div>
+				</div>
+
+		<!-- Web and Design -->
+				<div class="row" style="padding-top:40px;">
+					<div class="h3 text-center">Web &amp Design</div><br>
+					<div class="col-lg-4 col-md-4 col-sm-3 col-xs-4" style="margin-bottom:30px;"></div>
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-3 col-xs-4" >
+						<a class="item-hover" href="https://www.facebook.com/jiten1509" target="_blank">
+							<div class="item-info">
+								<div class="name">Jiten Kumar</div>
+								<div class="line"></div>
+								<div class="number">+91 9167468132</div>
+								<div class="email">jiten@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/jiten.jpg" class="img-responsive center-block" alt="" /></div>
+					</div>	
+
+					<div class="col-xs-4"></div>
+
+					<div class="item item-type-line col-lg-2 col-md-2 col-sm-3 col-xs-4" style="margin-bottom:30px;" >
+						<a class="item-hover" href="https://www.facebook.com/ashish.singh.7399" target="_blank">
+							<div class="item-info">
+								<div class="name">Ashish Singh</div>
+								<div class="line"></div>
+								<div class="number">+91 7738448525</div>
+								<div class="email">ashish@azeotropy.com</div>
+							</div>
+							<div class="mask"></div>
+						</a>
+						<div class="item-img"><img src="images/contacts/ashish.jpg" class="img-responsive center-block"  alt="" /></div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-3"></div>	
+				</div>
+
+			</div>
+		</section>
+
+		<section>
+			<div id="footer" class="row" style="background-color:#2c4041;color:#fff;">
+				<div class="h5 text-center">&copy; Copyright AZeotropy 2015</div>
+			</div>
+		</section>
+
+	
+<!-- </div> -->
+
+<!-- Modals for competitions -->
+<!-- Affiche Competition comp1-->	
+<div class="modal fade" id="comp1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal" style="color:#fff;">
+					<i class="fa fa-times fa-2x" style='color:#fff;'></i><span class="sr-only">Close</span>
+				</button>
+				<div class="h1 text-center" style="color:#fff;"><b>AFFICHE</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+
+					<div class="row">
+
+						<!-- first half of compe which is always fixed -->
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<div id="icons">
+									<div class="itemc item-type-linec" id="ab1">
+										<img src="images/competitions/info.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">About</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec" id="ps1">
+										<img src="images/competitions/ps.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">P.S.</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec" id="rg1">
+										<img src="images/competitions/reg.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Register</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec"  id="cn1">
+										<img src="images/competitions/man.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Contact</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<img src="images/competitions/pics/poster_pic.png" class="img-responsive" id="image">
+							</div>
+						</div>
+
+						<!-- the content part which changes w.r.t. tabs -->
+						<div class="content col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div id="desc1" ><div class="h1 text-center animated wobble">About</div>
+							<hr color="white"><br>
+							<div class="h4 text-center animated bounceInDown">AZeotropy 2015 brings to you Affiche, the poster presentation competition, for the ingenious and technical people who are never tired of research!<br><br> 
+								<i>“Research is to see what everybody else has seen, and to think what nobody else has thought”</i> <br><div class="h4 text-right">-Albert Szent-Gyorgyi</div><br>
+								The Symposium provides the opportunity to the undergraduate students to present their hard work of sleepless nights of research work through a poster.<br><br>
+								The event is a great platform for students to present their research work and research skills to the highly experienced scientists and industrialists of those fields.</div>
+							</div>
+
+							<div id="probs1" class="hide">
+								<div class="h1 text-center">Problem Statement</div>
+								<hr color="white"><br>
+								<div class="h4 text-center">OBJECTIVE: To design a poster of the research work undertaken by you through a project and present it in the Symposium of AZeotropy 2015 at IIT Bombay. <br><br>
+								The competition aims at encouraging research among the undergraduate students.<br><br>
+								The event is also a great opportunity for students to explore the potential and diversity of research projects in Chemical Engineering.</div>
+							</div>
+
+							<div id="regis1" class="hide">
+								<div class="h1 text-center">Register</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Registration will be open soon!</div>
+							</div>
+
+							<div id="contact1" class="hide">
+								<div class="h1 text-center">Contact</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">
+									Shrikant Chavare<br>
+									<h4>+91 9930076552<br>
+									shrikant@azeotropy.com</h4><br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>  
+				<!-- competition design over here -->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Chemecar Competition -->
+<div class="modal fade" id="comp2" tabindex="-1" role="dialog" aria-labelledby="myModal1" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal">
+					<i class="fa fa-times fa-2x"></i><span class="sr-only">Close</span></button>
+				<div class="h1 text-center" style="color:#fff;"><b>CHEM-E-CAR</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+						<div class="row">
+							
+							<!-- first half of compe which is always fixed -->
+							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<div id="icons">
+										<div class="itemc item-type-linec" id="ab2">
+										<img src="images/competitions/info.png" class="img-responsive">
+											<a class="item-hoverc">
+												<div class="item-infoc">
+													<div class="headlinec">About</div>
+												</div>
+												<div class="maskc"></div>
+											</a>
+										</div>
+
+										<div class="itemc item-type-linec" id="ps2">
+										<img src="images/competitions/ps.png" class="img-responsive">
+											<a class="item-hoverc">
+												<div class="item-infoc">
+													<div class="headlinec">P.S.</div>
+												</div>
+												<div class="maskc"></div>
+											</a>
+										</div>
+				 
+										<div class="itemc item-type-linec" id="rg2">
+										<img src="images/competitions/reg.png" class="img-responsive">
+											<a class="item-hoverc">
+												<div class="item-infoc">
+													<div class="headlinec">Register</div>
+												</div>
+												<div class="maskc"></div>
+											</a>
+										</div>
+
+										<div class="itemc item-type-linec"  id="cn2">
+										<img src="images/competitions/man.png" class="img-responsive">
+											<a class="item-hoverc">
+												<div class="item-infoc">
+													<div class="headlinec">Contact</div>
+												</div>
+												<div class="maskc"></div>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+									<img src="images/competitions/pics/chemecar_pic.png" class="img-responsive" id="image" style="padding-top:20%;">
+								</div>
+							</div>
+
+							<!-- the content part which changes w.r.t. tabs -->
+							<div class="content col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding-top:0%;">
+															
+								<div id="desc2">
+									<div class="h1 text-center animated wobble">About</div>
+									<hr color="white"><br>
+									<div class="h4 text-center animated bounceInDown">From thermal to nuclear, energy has seen almost all transformations. In this over-brimming world, it is highly probable to not get refined fuel for the car to run.<br><br> To bustle on it, AZeotropy 2015 brings to you Chem-E-Car, for ingenious people who are never tired of playing with chemicals! Applying physics to fluids is what Chemical Engineering is about.<br><br> So gear up and testify your Chemical Engineering spirit because if you can conquer Chem-E-car then you are well on your track.</div>
+								</div>
+
+								<div id="probs2" class="hide">
+									<div class="h1 text-center">Problem Statement</div>
+									<hr color="white"><br>
+									<div class="h3 text-center">OBJECTIVE: To design and construct a car that is powered with an on bot chemical energy source that will carry a specified load over a given distance and stop closest to the specified finish line in an optimized timing.</div>
+								</div>
+
+								<div id="regis2" class="hide">
+									<div class="h1 text-center">Register</div>
+									<hr color="white"><br>
+									<div class="h3 text-center">Registration will be open soon!</div>
+								</div>
+
+								<div id="contact2" class="hide">
+									<div class="h1 text-center">Contact</div>
+									<hr color="white"><br>
+									<div class="h3 text-center">
+										Shrikant Chavare<br>
+										<h4>+91 9930076552<br>
+										shrikant@azeotropy.com</h4><br></div>
+								</div>					
+								
+							</div>
+
+						</div>
+
+
+					</div>
+ 
+				<!-- competition design over here -->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Chemetimer competition -->
+<div class="modal fade" id="comp3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times fa-2x"></i><span class="sr-only">Close</span></button>
+				<div class="h1 text-center" style="color:#fff;"><b>CHEM-E-TIMER</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+			
+					<!-- first half of compe which is always fixed -->
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<div id="icons">
+						<div class="itemc item-type-linec" id="ab3">
+						<img src="images/competitions/info.png" class="img-responsive">
+							<a class="item-hoverc">
+								<div class="item-infoc">
+									<div class="headlinec">About</div>
+								</div>
+								<div class="maskc"></div>
+							</a>
+						</div>
+
+						<div class="itemc item-type-linec" id="ps3">
+						<img src="images/competitions/ps.png" class="img-responsive">
+							<a class="item-hoverc">
+								<div class="item-infoc">
+									<div class="headlinec">P.S.</div>
+								</div>
+								<div class="maskc"></div>
+							</a>
+						</div>
+ 
+						<div class="itemc item-type-linec" id="rg3">
+						<img src="images/competitions/reg.png" class="img-responsive">
+							<a class="item-hoverc">
+								<div class="item-infoc">
+									<div class="headlinec">Register</div>
+								</div>
+								<div class="maskc"></div>
+							</a>
+						</div>
+
+						<div class="itemc item-type-linec"  id="cn3">
+						<img src="images/competitions/man.png" class="img-responsive">
+							<a class="item-hoverc">
+								<div class="item-infoc">
+									<div class="headlinec">Contact</div>
+								</div>
+								<div class="maskc"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+					<img src="images/competitions/pics/chemetimer_pic.png" class="img-responsive" id="image" style="padding-top:10%;padding-left:15%;">
+				</div>
+			</div>
+
+			<!-- the content part which changes w.r.t. tabs -->
+			<div class="content col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding-top:0%;">
+				<div id="desc3">
+					<div class="h1 text-center animated wobble">About</div>
+					<hr color="white"><br>
+					<div class="h3 text-center animated bounceInDown">This is a first time event.<br><br>Try your hand at making a challenging model which incorporates multiple mechanisms into it like measuring time and triggering trap.</div>
+				</div>
+
+				<div id="probs3" class="hide">
+					<div class="h1 text-center">Problem Statement</div>
+					<hr color="white"><br>
+					<div class="h3 text-center">Make a model which incorporates a Chemical/Mechanical device to measure time and trigger open a trap door after a pre-set time, and simultaneously carry out a Chemical Reaction.<br><br> The more accurate your time and higher the yield, the better your chances at winning!</div>
+				</div>
+
+				<div id="regis3" class="hide">
+					<div class="h1 text-center">Register</div>
+					<hr color="white"><br>
+					<div class="h3 text-center">Registration will be open soon!</div>
+				</div>
+
+				<div id="contact3" class="hide">
+					<div class="h1 text-center">Contact</div>
+					<hr color="white"><br>
+					<div class="h3 text-center">
+						Nishant Chafle<br>
+						<h4>+91 9757352439<br>
+						nishant@azeotropy.com</h4><br></div>
+				</div>
+				
+			</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Chemophilia Competition -->
+<div class="modal fade" id="comp4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times fa-2x"></i><span class="sr-only">Close</span></button>
+				<div class="h1 text-center" style="color:#fff;"><b>CHEM-O-PHILIA</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+
+					<div class="row">
+
+						<!-- first half of compe which is always fixed -->
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<div id="icons">
+									<div class="itemc item-type-linec" id="ab4">
+										<img src="images/competitions/info.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">About</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec" id="ps4">
+										<img src="images/competitions/ps.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">P.S.</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec" id="rg4">
+										<img src="images/competitions/reg.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Register</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec"  id="cn4">
+										<img src="images/competitions/man.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Contact</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<img src="images/competitions/pics/chemophilia_pic.png" class="img-responsive" id="image" style='padding:10% 15%;'>
+							</div>
+						</div>
+
+						<!-- the content part which changes w.r.t. tabs -->
+						<div class="content col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+							<div id="desc4">
+								<div class="h1 text-center animated wobble">About</div>
+								<hr color="white"><br>
+								<div class="h3 text-center animated bounceInDown">Quiz</div>
+								<div class="h4 text-center animated bounceInDown">
+								A quiz can also be fun!<br>
+								Put your knowledge of Chemical Engineering <br>
+								to a quiz conducted on a national platform.<br>
+								Prove your worth in the Regional Elims, and <br>
+								face the best in the finale.</div>
+
+								<div class="h3 text-center animated bounceInDown">Workshop</div>
+								<div class="h4 text-center animated bounceInDown">
+								Hands on session for CHEMCAD, an integrated<br>
+								software for process engineering with the power to<br>
+								meet much required process simulation needs, from <br>
+								day-to-day challenges to large, multi-faceted projects.</div>
+							</div>
+
+							<div id="probs4" class="hide">
+								<div class="h1 text-center">Problem Statement</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Questions in a totally unconventional, fun way!<br><br>
+								Become our campus ambassador and help us organize the elimination round in your college.</div>
+							</div>
+
+							<div id="regis4" class="hide">
+								<div class="h1 text-center">Register</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Registration will be open soon!</div>
+							</div>
+
+							<div id="contact4" class="hide">
+								<div class="h1 text-center">Contact</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">
+									Jyot Antani<br>
+									<h4>+91 9869841897<br>
+									jyot@azeotropy.com</h4><br></div>
+							</div>
+						</div>
+					</div>
+				</div>     	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Cipher Competition -->
+<div class="modal fade" id="comp5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times fa-2x"></i><span class="sr-only">Close</span></button>
+				<div class="h1 text-center" style="color:#fff;"><b>CIPHER</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+
+					<div class="row">
+
+						<!-- first half of compe which is always fixed -->
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<div id="icons">
+								<div class="itemc item-type-linec" id="ab5">
+								<img src="images/competitions/info.png" class="img-responsive">
+									<a class="item-hoverc">
+										<div class="item-infoc">
+											<div class="headlinec">About</div>
+										</div>
+										<div class="maskc"></div>
+									</a>
+								</div>
+
+								<div class="itemc item-type-linec" id="ps5">
+								<img src="images/competitions/ps.png" class="img-responsive">
+									<a class="item-hoverc">
+										<div class="item-infoc">
+											<div class="headlinec">P.S.</div>
+										</div>
+										<div class="maskc"></div>
+									</a>
+								</div>
+		 
+								<div class="itemc item-type-linec" id="rg5">
+								<img src="images/competitions/reg.png" class="img-responsive">
+									<a class="item-hoverc">
+										<div class="item-infoc">
+											<div class="headlinec">Register</div>
+										</div>
+										<div class="maskc"></div>
+									</a>
+								</div>
+
+								<div class="itemc item-type-linec"  id="cn5">
+								<img src="images/competitions/man.png" class="img-responsive">
+									<a class="item-hoverc">
+										<div class="item-infoc">
+											<div class="headlinec">Contact</div>
+										</div>
+										<div class="maskc"></div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+							<img src="images/competitions/pics/cipher_pic.png" class="img-responsive" id="image" style="padding-top:15%;padding-left:8%;">
+							</div>
+						</div>
+
+						<!-- the content part which changes w.r.t. tabs -->
+						<div class="content col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding-top:0%;">
+							<!-- <img src="images/competitions/names/cipher_name.png" style="margin-left:-27.5%; margin-top:2%;"> -->
+							<div id="desc5">
+								<div class="h1 text-center animated wobble">About</div>
+								<hr color="white"><br>
+								<div class="h3 text-center animated bounceInDown">
+									AZeotropy's online crypt hunt.<br><br> Solve the riddles, answer the questions and cross the levels.
+								</div>
+							</div>
+
+							<div id="probs5" class="hide">
+								<div class="h1 text-center">Problem Statement</div>
+								<hr color="white"><br>
+								<div class="h4 text-center">Elementary, my dear Watson!<br><br>
+									Are you a disciple of Sherlock? You been on an adventure with Professor Langdon? Even then, YOU SHALL NOT PASS! Because, the problem is not the problem; the problem is your attitude about the problem. I do not open, even at the close.<br><br>
+									If you didn't get these references (Sherlock, Dan Brown, Lord of the Rings, Pirates of the Caribbean and Harry Potter respectively), you'll enjoy the Cipher.<br> If you did, it's gonna be legen.. wait for it... <br><br>Yeah, you're gonna have to wait for the link.<br> Keep checking this page.</div>
+							</div>
+
+							<div id="regis5" class="hide">
+								<div class="h1 text-center">Register</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Registration will be open soon!</div>
+							</div>
+
+							<div id="contact5" class="hide">
+								<div class="h1 text-center">Contact</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">
+									Jyot Antani<br>
+									<h4>+91 9869841897<br>
+									jyot@azeotropy.com</h4><br></div>
+							</div>
+						</div>
+					</div>
+				</div>     	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Row one ends here -->
+
+
+
+<!-- DSI Competition -->
+<div class="modal fade" id="comp6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times fa-2x"></i><span class="sr-only">Close</span></button>
+				<div class="h1 text-center" style="color:#fff;"><b>DSI</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+
+					<div class="row">
+
+						<!-- first half of compe which is always fixed -->
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+							<div id="icons">
+								<div class="itemc item-type-linec" id="ab6">
+								<img src="images/competitions/info.png" class="img-responsive">
+									<a class="item-hoverc">
+										<div class="item-infoc">
+											<div class="headlinec">About</div>
+										</div>
+										<div class="maskc"></div>
+									</a>
+								</div>
+
+								<div class="itemc item-type-linec" id="ps6">
+								<img src="images/competitions/ps.png" class="img-responsive">
+									<a class="item-hoverc">
+										<div class="item-infoc">
+											<div class="headlinec">P.S.</div>
+										</div>
+										<div class="maskc"></div>
+									</a>
+								</div>
+		 
+								<div class="itemc item-type-linec" id="rg6">
+								<img src="images/competitions/reg.png" class="img-responsive">
+									<a class="item-hoverc">
+										<div class="item-infoc">
+											<div class="headlinec">Register</div>
+										</div>
+										<div class="maskc"></div>
+									</a>
+								</div>
+
+								<div class="itemc item-type-linec"  id="cn6">
+								<img src="images/competitions/man.png" class="img-responsive">
+									<a class="item-hoverc">
+										<div class="item-infoc">
+											<div class="headlinec">Contact</div>
+										</div>
+										<div class="maskc"></div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<img src="images/competitions/pics/dsi_pic.png" class="img-responsive" id="image" style="padding-top:0%;padding-left:5%">
+							</div>
+						</div>
+
+						<!-- the content part which changes w.r.t. tabs -->
+						<div class="content col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div id="desc6">
+								<div class="h1 text-center animated wobble">About</div>
+								<hr color="white"><br>
+								<div class="h3 text-center animated bounceInDown">We don’t want another Bhopal Gas Tragedy, do we?<br><br> Get your team together and investigate a disaster scene. Couple your engineering knowledge with observation skills because that’s all you need to solve this mystery.<br><br>
+								<i>"The world is full of obvious things which nobody by any chance ever observes."</i><br><div class="h4 text-right">-Sherlock Holmes</div></div>
+							</div>
+
+							<div id="probs6" class="hide">
+								<div class="h1 text-center">Problem Statement</div>
+								<hr color="white"><br>
+								<div class="h4" style="margin-left:5%;">OBJECTIVE: To investigate a disaster scene and deduce:<br><br>
+									<ul type="disc">
+										<li>All the possible faults that may cause the disaster,</li>
+										<li>All the possible causes that have caused the disaster.</li>
+									</ul><br><br>
+									<p class="text-left">
+									Remember:<br>
+									<ul type="1">
+									<li>Details matter</li>
+									<li>Partners are indispensable</li>
+									<li>There is more than one way to approach a problem</li></ul></p></div>
+							</div>
+
+							<div id="regis6" class="hide">
+								<div class="h1 text-center">Register</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Registration will be open soon!</div>
+							</div>
+
+							<div id="contact6" class="hide">
+								<div class="h1 text-center">Contact</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">
+									Shrikant Chavare<br>
+									<h4>+91 9930076552<br>
+									shrikant@azeotropy.com</h4><br></div>
+							</div>
+						</div>
+					</div>
+				</div>     	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- IDP Competition -->
+<div class="modal fade" id="comp7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times fa-2x"></i><span class="sr-only">Close</span></button>
+				<div class="h1 text-center" style="color:#fff;"><b>IDP</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<div id="icons">
+									<div class="itemc item-type-linec" id="ab7">
+									<img src="images/competitions/info.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">About</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec" id="ps7">
+									<img src="images/competitions/ps.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">P.S.</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+			 
+									<div class="itemc item-type-linec" id="rg7">
+									<img src="images/competitions/reg.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Register</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec"  id="cn7">
+									<img src="images/competitions/man.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Contact</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<img src="images/competitions/pics/idp_pic.png" class="img-responsive" id="image" style="padding-top:0%;padding-left:5%;">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 content">
+							<div id="desc7">
+								<div class="h1 text-center animated wobble">About</div>
+								<hr color="white"><br>
+								<div class="h3 text-center animated bounceInDown">This is AZeotropy’s regular competition. Solve the industry’s specific problem and win a handsome prize for it.</div>
+							</div>
+
+							<div id="probs7" class="hide">
+								<div class="h1 text-center">Problem Statement</div>
+								<hr color="white"><br>
+								<div class="h3 text-center"></div>
+							</div>
+
+							<div id="regis7" class="hide">
+								<div class="h1 text-center">Register</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Registration will be open soon!</div>
+							</div>
+
+							<div id="contact7" class="hide">
+								<div class="h1 text-center">Contact</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">
+									Sagar Sant<br>
+									<h4>+91 9869083337<br>
+									sagar@azeotropy.com</h4><br></div>
+							</div>							
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Quizit Competition -->
+<div class="modal fade" id="comp8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times fa-2x"></i><span class="sr-only">Close</span></button>
+				<div class="h1 text-center" style="color:#fff;"><b>Q-VIZ-IT</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+						<!-- first half of compe which is always fixed -->
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<div id="icons">
+									<div class="itemc item-type-linec" id="ab8">
+									<img src="images/competitions/info.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">About</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec" id="ps8">
+									<img src="images/competitions/ps.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">P.S.</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+			 
+									<div class="itemc item-type-linec" id="rg8">
+									<img src="images/competitions/reg.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Register</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec"  id="cn8">
+									<img src="images/competitions/man.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Contact</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<img src="images/competitions/pics/qvizit_pic.png" class="img-responsive" id="image" style="padding-top:0%;">
+							</div>
+						</div>
+
+						<!-- the content part which changes w.r.t. tabs -->
+						<div class="content col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div id="desc8">
+								<div class="h1 text-center animated wobble">About</div>
+								<hr color="white"><br>
+								<div class="h3 text-center animated bounceInDown">Q-viz-it is AZeotropy's Online Quiz! <br><br> Apply your engineering knowledge and enjoy a fun and intellectually stimulating quiz. And as an added incentive, the winners get an industrial visit to BASF. <br><br>For the first time, we also have a special quiz exclusively for IITB students. This is an individual competition.<br><br> Just Register for the competition and do login for the quiz.</div>
+							</div>
+
+							<div id="probs8" class="hide">
+								<div class="h1 text-center">Problem Statement</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">For more details, refer to the PDF.</div>
+							</div>
+
+							<div id="regis8" class="hide">
+								<div class="h1 text-center">Register</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Registration will be open soon!</div>
+							</div>
+
+							<div id="contact8" class="hide">
+								<div class="h1 text-center">Contact</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">
+									Jyot Antani<br>
+									<h4>+91 9869841897<br>
+									jyot@azeotropy.com</h4><br></div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Simulati Competition -->
+<div class="modal fade" id="comp9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times fa-2x"></i><span class="sr-only">Close</span></button>
+				<div class="h1 text-center" style="color:#fff;"><b>SIMULATI</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+						<!-- first half of compe which is always fixed -->
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<div id="icons">
+									<div class="itemc item-type-linec" id="ab9">
+									<img src="images/competitions/info.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">About</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec" id="ps9">
+									<img src="images/competitions/ps.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">P.S.</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+			 
+									<div class="itemc item-type-linec" id="rg9">
+									<img src="images/competitions/reg.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Register</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec"  id="cn9">
+									<img src="images/competitions/man.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Contact</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<img src="images/competitions/pics/simulati_pic.png" class="img-responsive" id="image" style="padding-top:5%;padding-left:5%;">
+							</div>
+						</div>
+
+						<!-- the content part which changes w.r.t. tabs -->
+						<div class="content col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div id="desc9">
+								<div class="h1 text-center animated wobble">About</div>
+								<hr color="white"><br>
+								<div class="h3 text-center animated bounceInDown">COMSOL Multiphysics is a powerful interactive environment used to model and solve all kinds of scientific and engineering problems.<br><br> With COMSOL Multiphysics you can easily extend conventional models for one type of physics into multiphysics models that solve coupled physics phenomena - and do so simultaneously. <br><br>
+								For more details on COMSOL, visit: <a href="http://www.comsol.co.in" target="_blank"><i>http://www.comsol.co.in</i></a></div>
+							</div>
+
+							<div id="probs9" class="hide">
+								<div class="h1 text-center">Problem Statement</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">You will have to solve a couple of Chemical Engineering related problems using COMSOL trial version during elimination round.<br><br> PS will be released just before the elimination round. </div>
+							</div>
+							
+							<div id="regis9" class="hide">
+								<div class="h1 text-center">Register</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Registration will be open soon!</div>
+							</div>
+
+							<div id="contact9" class="hide">
+								<div class="h1 text-center">Contact</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">
+									Sagar Sant<br>
+									<h4>+91 9869083337<br>
+									sagar@azeotropy.com</h4><br></div>
+							</div>
+						</div>
+					</div>
+				</div>     	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Swaasthya competition -->
+<div class="modal fade" id="comp10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header" style="background-color:#425064;">
+				<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times fa-2x"></i><span class="sr-only">Close</span></button>
+				<div class="h1 text-center" style="color:#fff;"><b>SWAASTHYA</b></div>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+						<!-- first half of compe which is always fixed -->
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<div id="icons">
+									<div class="itemc item-type-linec" id="ab10">
+									<img src="images/competitions/info.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">About</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec" id="ps10">
+									<img src="images/competitions/ps.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">P.S.</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+			 
+									<div class="itemc item-type-linec" id="rg10">
+									<img src="images/competitions/reg.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Register</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+
+									<div class="itemc item-type-linec"  id="cn10">
+									<img src="images/competitions/man.png" class="img-responsive">
+										<a class="item-hoverc">
+											<div class="item-infoc">
+												<div class="headlinec">Contact</div>
+											</div>
+											<div class="maskc"></div>
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<img src="images/competitions/pics/theme_pic.png" class="img-responsive" id="image" style="padding-top:0%;">
+							</div>
+						</div>
+						<!-- the content part which changes w.r.t. tabs -->
+						<div class="content col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<div id="desc10">
+								<div class="h1 text-center animated wobble">About</div>
+								<hr color="white"><br>
+								<div class="h3 text-center animated bounceInDown">Biology, Biological Engineering, Biomedical Engineering, Pharmaceutical Engineering, Biomaterials, Biotechnology, Systems Biology,...This ain't for doctors, is it?!<br><br> AZeotropy, IIT Bombay presents "Chemical Engineering in Healthcare", the theme of today and the days to come!</div>
+							</div>
+
+							<div id="probs10" class="hide">
+								<div class="h1 text-center">Problem Statement</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Undertake Chemical Engineering Analysis of a part of the human body. May involve mathematical modelling and control analysis.<br><br> Stay tuned for the official release of the problem statement!</div>
+							</div>
+
+							<div id="regis10" class="hide">
+								<div class="h1 text-center">Register</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">Registration will be open soon!</div>
+							</div>
+
+							<div id="contact10" class="hide">
+								<div class="h1 text-center">Contact</div>
+								<hr color="white"><br>
+								<div class="h3 text-center">
+									Nishant Chafle<br>
+									<h4>+91 9757352439<br>
+									nishant@azeotropy.com</h4><br></div>
+							</div>							
+						</div>
+					</div>
+				</div>     	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- All modal ends here -->
+
+
+<!-- Code over Bro -->
+
+
+</body>
+</html>
